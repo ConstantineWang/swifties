@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Swifties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <style>
+ 
+
+    </style>
+</head>
+<body>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown about-header" style="animation-delay:0s; color:white;">
+        <table>
+            <tr>
+                <td id="logo">Swifties.</td>
+                <td id="navigation">
+                    <a href="index.html">Home</a>
+                    <a href="narrative.html">Narrative</a>
+                    <a href="data.html">The Data</a>
+                    <a href="timeline.html">Timeline</a>
+                    <a href="references.html">References</a>
+                    <a href="about.html">About</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <section id="narrative">
+        <img onclick="magnify($(this).attr('src'))" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2f%2Fe6%2Fbf%2F2fe6bf387c91d68ba303dff74be7f5ae.jpg&f=1&nofb=1&ipt=4ccaa83e8e619d2338a99187bd6f4e4d7fa9ff7c07f626f438a2f9eea06cc67d&ipo=images" style = "width: 100vw; height: 50vh; object-fit: cover; margin-bottom: 30px;">
+
+        <div style="background-color: #fff; color: #000">
+            <div id="bio">
+                    <h1 id="reference">Reference</h1>
+                    <p class="quote">"This is a quote related to the chapter."</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim.</p>
+            </div>
+
+
+                <!-- The Tableau visualization will be placed here -->
+            </div>
+            <div class="parallax-image" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2f%2Fe6%2Fbf%2F2fe6bf387c91d68ba303dff74be7f5ae.jpg&f=1&nofb=1&ipt=4ccaa83e8e619d2338a99187bd6f4e4d7fa9ff7c07f626f438a2f9eea06cc67d&ipo=images'); margin-bottom: 30px;"> </div>
+
+        </div>
+        <div id="bio">
+            <h1 id="photo">Photos and Videos</h1>
+            <p class="quote">"This is a quote related to the chapter."</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim.</p>
+        </div>
+        <div id="bio">
+            <h1 id="acknowledgement">Acknowledgement</h1>
+            <p class="quote">"This is a quote related to the chapter."</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim.</p>
+        </div>
+
+
+
+    </section>
+    <ul class="scroll-spy">
+        <li><a href="#reference">Reference</a></li>
+        <li><a href="#photo">photo</a></li>
+        <li><a href="#acknowledgement">Acknowledgement</a></li>
+    </ul>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer" class="animated slideInUp" style="animation-delay:0s; background-color: white; color: black;">
+        made on earth by <br> <a href="https://constantinewang.github.io">Constantine Wang</a>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop(),
+                slowScroll = scroll/3,
+                slowBg = '50% ' + -(slowScroll) + 'px';
+    
+            $('.parallax-image').css({
+                backgroundPosition: slowBg,
+                height: "40vh",
+                //make the image at center
+            });
+        });
+    
+        // Scroll spy
+        $(window).on('scroll', function() {
+            var threshold = 200;  // adjust this value to your needs
+            $('.scroll-spy a').each(function() {
+                var chapter = $(this).attr('href');
+                if ($(chapter).offset().top - threshold <= $(window).scrollTop()) {
+                    $('.scroll-spy a').removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+        });
+    
+
+    </script>
+    
+</body>
+</html>

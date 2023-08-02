@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Swifties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="text/javascript"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <style>
+        #editor {
+            height: 400px;
+            width: 600px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown about-header" style="animation-delay:0s; color:white;">
+        <table>
+            <tr>
+                <td id="logo">Swifties.</td>
+                <td id="navigation">
+                    <a href="index.html">Home</a>
+                    <a href="narrative.html">Narrative</a>
+                    <a href="data.html">The Data</a>
+                    <a href="timeline.html">Timeline</a>
+                    <a href="references.html">References</a>
+                    <a href="about.html">About</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <section id="narrative">
+        <div id="video" class="video-container">
+            <video width="100%" height="400" autoplay muted loop>
+                <source src="9870fd5a-89c1-4d30-b66d-fc055279feeb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="video-title">
+                <h2>"The DATA"</h2>
+            </div>
+        </div>
+
+        <div style="background-color: #fff; color: #000">
+            <div id="bio">
+                <h1 id="critique">Data</h1>
+                <p class="quote">"This is a quote related to the chapter."</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum enim.</p>
+            
+            </div>
+
+                <!-- The Tableau visualization will be placed here -->
+            </div>
+            <div id="bio" style="margin-bottom: 0!important;">
+                <h1 id="popular" style="width:400px">Average Popularity by Year</h1>
+
+            </div>
+            <div class="section-container">
+                <div id="vizContainer1">
+                    <div class='tableauPlaceholder' id='viz1690968411198' style='position: relative'><noscript><a href='#'><img alt='Average Popularity by Year (Spotify) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;Popularitybyyear&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Popularitybyyear&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;Popularitybyyear&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1690968411198');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+                <div style="width:60%; ">
+                    <p>The line graph shows that Taylor Swift's albums have become increasingly popular over time, with a significant jump in popularity after her 2014 album, 1989. This album was her first full-fledged pop album, and it marked a major departure from her earlier country music sound.
+                    </p>
+                    <p>There are a few reasons why this genre shift may have led to increased popularity. First, pop music is simply more popular than country music in general. In the United States, pop music accounts for the majority of radio airplay and album sales. This means that Taylor Swift's music was more likely to be heard by a wider audience when she switched to pop.</p>
+                    <p>Second, Taylor Swift's pop music is more accessible than her country music. Her pop songs are typically shorter and have more catchy melodies. This makes them easier to listen to and remember, which can lead to more streams.
+                        </p>
+                    <p>Finally, Taylor Swift's pop music is more relatable to a wider audience. Her songs often deal with universal themes like love, heartbreak, and friendship. This makes them more appealing to people of all ages and backgrounds.</p>    
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <div id="bio">
+            <p>Of course, there are other factors that have contributed to Taylor Swift's popularity, such as her strong songwriting skills and her savvy marketing campaigns. However, her genre shift from country to pop was a major turning point in her career, and it helped to propel her to superstardom. Overall, the evidence suggests that Taylor Swift's genre shift from country to pop was a major factor in her increased popularity. Her pop music is more accessible, relatable, and popular than her country music, which has helped her to reach a wider audience.
+
+        </div>
+
+
+    </section>
+
+    <div id="bio">
+
+    <h1 style="width:530px" id="code">Dataset Acquisition via R Code</h2>
+    <div id="editor" style="height: 500px; width: 100%; font-size: 15px; position: relative!important;">
+id <- '######'
+secret <- '######'
+
+
+Sys.setenv(SPOTIFY_CLIENT_ID = id)
+Sys.setenv(SPOTIFY_CLIENT_SECRET = secret)
+
+access_token <- get_spotify_access_token()
+
+taylor_id <- "06HL4z0CvFAxyc27GXpf02"
+
+# Discography
+taylorswift <- get_artist_audio_features(
+    artist = taylor_id,
+    include_groups = c("album", "single"))
+
+taylorswift <- taylorswift %>%
+    select(album_id, album_release_date, album_release_year, 
+            danceability, energy, key, loudness, mode, speechiness, acousticness,
+            instrumentalness, liveness, valence, tempo, track_id,
+            time_signature, duration_ms, explicit, track_name,
+            album_name, key_name, mode_name, key_mode)
+
+n <- nrow(taylorswift)
+popularity <- integer(n)
+
+for(i in 1:n) {
+    track_id <- taylorswift$track_id[i]
+    song_popularity <- get_track(track_id)
+    popularity[i] <- song_popularity$popularity
+}
+
+taylorswift <- cbind(taylorswift, popularity)
+# Rearrange the columns
+taylorswift <- select(taylorswift, album_name, album_id, track_name, track_id, album_release_date, 
+                        album_release_year, popularity, danceability, energy, key, loudness, mode, speechiness, 
+                        acousticness, instrumentalness, liveness, valence, tempo, time_signature, 
+                        duration_ms, explicit, key_name, mode_name, key_mode)
+
+country_album <- c("Fearless", "Red", "Speak Now")
+
+country_indices <- c(
+    which(grepl("Fearless", taylorswift$album_name, ignore.case = TRUE, fixed = FALSE)),
+    which(grepl("Red", taylorswift$album_name, ignore.case = TRUE, fixed = FALSE)),
+    which(grepl("Speak Now", taylorswift$album_name, ignore.case = TRUE, fixed = FALSE))
+)
+
+country_indices <- country_indices[-114]
+country_albums <- unique(taylorswift$album_name[country_indices])
+print(country_albums)
+
+indices <- which(taylorswift$album_name %in% country_albums)
+
+genre <- character(n)
+genre[1:n] <- "Pop"
+genre[indices] <- "Country"
+
+taylorswift <- cbind(taylorswift, genre)
+
+taylorswift <- taylorswift %>%
+    arrange(album_release_date)
+
+        
+          </div>
+    </div>
+
+    <!-- ... Rest of the body content -->
+
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/r");
+      </script>
+    
+
+    <ul class="scroll-spy">
+        <li><a href="#critique">Data Critique</a></li>
+        <li><a href="#popular">Average Popularity</a></li>
+        <li><a href="#code">Code</a></li>
+    </ul>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer" class="animated slideInUp" style="animation-delay:0s; background-color: white; color: black;">
+        made on earth by <br> <a href="https://constantinewang.github.io">Constantine Wang</a>
+    </div>
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop(),
+                slowScroll = scroll/1.5,
+                slowBg = '50% ' + -(slowScroll) + 'px';
+    
+            $('.parallax-image').css({
+                backgroundPosition: slowBg,
+                height: "40vh",
+                //make the image at center
+            });
+        });
+    
+        // Scroll spy
+        $(window).on('scroll', function() {
+            var threshold = 200;  // adjust this value to your needs
+            $('.scroll-spy a').each(function() {
+                var chapter = $(this).attr('href');
+                if ($(chapter).offset().top - threshold <= $(window).scrollTop()) {
+                    $('.scroll-spy a').removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+        });
+    
+        $(document).ready(function(){
+            var vizUrl = "https://public.tableau.com/views/Popularitybyyear/Sheet1?:language=zh-CN&publish=yes&:display_count=n&:origin=viz_share_link";
+            var vizOptions = {
+                hideTabs: true,
+                width: "300px",
+                height: "300px"
+            };
+            var vizContainer1 = document.getElementById('vizContainer1');
+            var viz = new tableau.Viz(vizContainer1, vizUrl, vizOptions);
+
+        });
+    </script>
+    
+</body>
+</html>
