@@ -153,13 +153,15 @@ header table {
 }
 .social {
     color:rgb(255, 44, 90);
-    font-size:23px;
+    font-size:20px;
     padding:12px 17px;
-    border-radius:50%;
+    border-radius:5px;
     background:transparent;
     transition:0.4s ease-in-out;
     font-weight:bold;
     margin:0px 8px;
+    background:rgb(255, 44, 90);
+    color:#fff;
 }
 .social:hover { 
     cursor: pointer;
@@ -698,7 +700,7 @@ a:hover{
 #bio p{
     font-family: Poppins;
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #111;
     font-weight: 500;
 

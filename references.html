@@ -9,12 +9,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <style>
- 
 
-    </style>
 </head>
+
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="index.js" type="text/javascript"></script>
+
     <div id="magnify">
         <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
         <div id="img_here"></div>
@@ -58,9 +62,24 @@
 
         </div>
         <div id="bio">
-            <h1 id="photo">Photos and Videos</h1>
+            <h1 id="photo" style="width:300px">Photos and Videos</h1>
             <h2>Home Page</h2>
-            <p>https://recordstoreday.com/UPC/6025179911944</p>
+            <p>Landing image: <a href="https://recordstoreday.com/UPC/6025179911944">https://recordstoreday.com/UPC/6025179911944</a></p>
+            <p>Middle GIF: <a href="https://theslice.thecontentdivision.com.au/case-studies/what-brands-can-learn-from-taylor-swift/">https://theslice.thecontentdivision.com.au/case-studies/what-brands-can-learn-from-taylor-swift/</a></p>
+            <h2>Narrative Page</h2>
+            <p>Landing video: <a href="https://www.youtube.com/watch?v=40RsbcFRwNA">https://www.youtube.com/watch?v=40RsbcFRwNA</a></p>
+            <p>Image 1: <a href="https://www.hbaeagleeye.com/wp-content/uploads/2021/03/Taylor-Swift-Eras-with-Folklore_sm.jpg">https://www.hbaeagleeye.com/wp-content/uploads/2021/03/Taylor-Swift-Eras-with-Folklore_sm.jpg</a></p>
+            <p>Image 2: <a href="https://t4.ftcdn.net/jpg/02/07/15/43/360_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg">https://t4.ftcdn.net/jpg/02/07/15/43/360_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg</a></p>
+            <h2>Data Page</h2>
+            <p>Landing video: <a href="https://www.youtube.com/watch?v=KLNXzGJydCk">https://www.youtube.com/watch?v=KLNXzGJydCk</a></p>
+            <p>Image 1: <a href="https://t4.ftcdn.net/jpg/02/07/15/43/360_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg">https://t4.ftcdn.net/jpg/02/07/15/43/360_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg</a></p>
+            <h2>Timeline Page</h2>
+            <p>Landing video: <a href="https://www.youtube.com/watch?v=QuijXg8wm28">https://www.youtube.com/watch?v=QuijXg8wm28</a></p>
+            <p>Album cover 1: <a href="https://time.graphics/uploadedFiles/500/3b/c0/3bc0a2169d0eb359e1e1b5abbb4bf61b.png">https://time.graphics/uploadedFiles/500/3b/c0/3bc0a2169d0eb359e1e1b5abbb4bf61b.png</a></p>
+            <p>Album cover 2: <a href="https://time.graphics/uploadedFiles/500/bc/07/bc078f8ee58063415f85956770482527.jpg">https://time.graphics/uploadedFiles/500/bc/07/bc078f8ee58063415f85956770482527.jpg</a></p>
+            <h2>Reference Page</h2>
+            <p>Image: <a href="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80</a></p>
+            
         </div>
         <div id="bio">
             <h1 id="acknowledgement">Acknowledgement</h1>
@@ -73,7 +92,7 @@
     </section>
     <ul class="scroll-spy">
         <li><a href="#reference">Reference</a></li>
-        <!-- <li><a href="#photo">photo</a></li> -->
+        <li><a href="#photo">photo</a></li>
         <li><a href="#acknowledgement">Acknowledgement</a></li>
     </ul>
     <div id="contact">
@@ -91,13 +110,15 @@
                 </tr>
             </table>
     </div>
+
     <div id="footer" class="animated slideInUp" style="animation-delay:0s; background-color: white; color: black;">
         made on earth by <br> <a href="https://constantinewang.github.io">Constantine Wang</a>
     </div>
 
-    <script src="index.js" type="text/javascript"></script>
     <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
     <script>
+        
         $(window).scroll(function() {
             var scroll = $(window).scrollTop(),
                 slowScroll = scroll/3,
@@ -121,7 +142,7 @@
                 }
             });
         });
-    
+        
 
     </script>
     
