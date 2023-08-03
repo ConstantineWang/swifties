@@ -10,12 +10,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <style>
+        #editor {
+            height: 400px;
+            width: 600px;
+        }
+    </style>
+
 </head>
 <body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        
     AOS.init();
     </script>
+        <script src="index.js" type="text/javascript"></script>
+
     <div id="magnify">
         <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
         <div id="img_here"></div>
@@ -27,7 +40,7 @@
                 <td id="navigation">
                     <a href="index.html">Home</a>
                     <a href="narrative.html">Narrative</a>
-                    <a href="data.html">The Data</a>
+                    <a href="data.html">Data</a>
                     <a href="timeline.html">Timeline</a>
                     <a href="references.html">References</a>
                     <a href="about.html">About</a>
@@ -35,118 +48,237 @@
             </tr>
         </table>
     </header>
-    
-    <section id="narrative">
+
+
+
         <div id="video" class="video-container">
             <video width="100%" height="400" autoplay muted loop>
                 <source src="7b732504-cd20-422a-a5f9-2ccb3c248003.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <div class="video-title">
-                <h2>"MISS AMERICANA"</h2>
             </div>
         </div>
-        <div id="bio" data-aos="fade-up">
-            <h1 id="timeline2" style="width:410px">Taylor Swift's Music Journey</h1>
-            <p data-aos="fade-up" class="quote">"I love the idea of taking your narrative back."</p>
-        
-            <h2>Early Career and Country Music (2006-2008)</h2>
-            <p data-aos="fade-up">Taylor Swift's debut self-titled album, "Taylor Swift," was released in October 2006. The album was a commercial success, and several singles like "Tim McGraw," "Teardrops on My Guitar," and "Our Song" received widespread acclaim, establishing her as a rising star in the country music scene.</p>
-        
-            <h2>Continued Success and Cross-Genre Appeal (2008-2012)</h2>
-            <p data-aos="fade-up">With her second studio album, "Fearless," released in November 2008, Swift's popularity continued to grow. "Fearless" included hits like "Love Story," "You Belong with Me," and "White Horse." The album won numerous awards, including Album of the Year at the Grammy Awards, making Taylor Swift the youngest recipient of this prestigious accolade at that time.</p>
-        
-            <h2>Redefining Herself with "Red" and "1989" (2012-2015)</h2>
-            <p data-aos="fade-up">In 2012, Swift released the album "Red," which showcased a more diverse musical style, incorporating elements of pop, rock, and even dubstep. In 2014, Taylor Swift released "1989," her first full-fledged pop album. It was a massive success, featuring chart-toppers such as "Shake It Off," "Blank Space," and "Bad Blood."</p>
 
-            <h2>"Reputation" and "Lover" Eras (2017-2019)</h2>
-            <p data-aos="fade-up">Taylor Swift's sixth studio album, "Reputation," was released in 2017, exploring themes of celebrity, media scrutiny, and personal growth. "Lover," released in 2019, marked a return to a more light-hearted and romantic style. </p>
-        
-        </div>
-        <div class="parallax-image" style="background-image: url('https://www.hbaeagleeye.com/wp-content/uploads/2021/03/Taylor-Swift-Eras-with-Folklore_sm.jpg'); margin-bottom:20px; margin-top:50px;height:50vh"> </div>
-        <div id="bio" >
-            <h1 id="timeline3" style="width:650px">Taylor Swift's Music Journey After Pandemic</h1>
+        <div style="background-color: #fff; color: #000">
 
-            <h2>"Folklore" and "Evermore" Eras (2020)</h2>
-            <p data-aos="fade-up">In July 2020, Taylor Swift surprised her fans by releasing her eighth studio album, "Folklore," with a more indie-folk sound. Just a few months later, in December 2020, Swift released her ninth studio album, "Evermore," which continued the folk and alternative direction she explored in "Folklore."</p>
-        
-            <h2>Taylor’s Version Eras (2021-)</h2>
-            <p data-aos="fade-up">"Taylor's Version" refers to the re-recordings of Taylor Swift's previous albums that she began releasing in 2021. The reason behind re-recording her old music was to regain control over her master recordings, which she lost in a business deal with her former record label.</p>
-            <p data-aos="fade-up">
-                “Taylor’s Version” reflects Taylor Swift's resilience, determination, and commitment to her artistry and her fans. It demonstrates her willingness to stand up for her rights and reclaim her creative work, even in the face of challenges and adversity.
-            </p>
-            <p data-aos="fade-up">
-                The re-recordings also serve as an opportunity for fans to revisit Taylor Swift's earlier musical eras while supporting her and her artistic endeavors. It allows fans to experience the nostalgia of her classic hits with a fresh perspective and new recordings, reminding us of the enduring impact of her music on popular culture.
-            </p>
-            <p data-aos="fade-up">
-                Furthermore, "Taylor's Version" highlights the broader issues of artist rights and ownership within the music industry. Taylor Swift's decision to re-record her albums and release them under her control has sparked discussions about the importance of artists having ownership and control over their creative output, as well as the need for transparency and fairness in the music business. 
-            </p>
-            <p data-aos="fade-up">
-                Overall, "Taylor's Version" tells us about the power of artists to take control of their careers, the loyalty and support of her fanbase, and the ongoing conversation surrounding artist rights and the changing landscape of the music industry.
-            </p>
-        </div>
-        <div id="bio">
-            <h1 id="timeline4" style="width:170px">Conclusion</h1>
-             <p data-aos="fade-up" class="quote">In conclusion, based on our data research, we were able to draw conclusions that answer our research questions. </p>
-             <h2>Genre Shift and Popularity </h2>
-             <p data-aos="fade-up">
-                Taylor Swift's transition from country to pop music with her album "1989," led to a significant boost in her popularity. This shift to a more popular and mainstream music genre, characterized by shorter, catchier songs, and universal themes, attracted a wider audience and obtained more streams. The data illustrates a clear trend in Taylor Swift's album popularity over time, with the line graph displaying a substantial increase in popularity following the release of her 2014 album "1989”. This data trend suggests that her move to a more mainstream and popular music genre had a positive impact on her album's appeal, leading to an increase in the frequency of streams and ultimately the album’s success. With indie pop “folklore” having the highest popularity score, followed by pop albums “reputation” and “Lover,” we can infer that pop music tends to receive more attention on mainstream radio, streaming platforms, and music charts, leading to higher streaming numbers and popularity. 
-             </p>
-        </div>  
-        <div class="parallax-image" style="background-image: url('https://t4.ftcdn.net/jpg/02/07/15/43/360_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg'); margin-bottom:20px; margin-top:20px; height: auto!important;"> 
-        <div id="bio" class="white">
-             <h2 style="color:white">
-                Emotional Analysis of Gen Z and Its Impact on Music Consumption
-             </h2>
-             <p data-aos="fade-up">
-                Taylor Swift's lyrics often delve into personal experiences, relationships, and emotions. Her storytelling style makes listeners feel connected to the stories she shares, allowing them to experience a deep emotional relationship with her music. The analysis of Spotify metrics offers insights into the emotional and musical characteristics of Taylor Swift's songs. The contrast between low valence scores (negative emotions) and high energy scores suggests that Taylor Swift's music often combines emotionally charged themes with higher musical energy. Gen Z’s emotional landscape indicates Gen Z’s special inclination for music that reflects the emotions and feelings commonly experienced by their generation. With Taylor Swift’s music resonating with Gen Z’s emotional depth and range, we identified key themes in albums with higher popularity scores in various valence and energy levels: 
-             </p>
-             <p data-aos="fade-up" >
-                Key themes discovered in reputation (higher valence, lower energy, higher popularity) 
-             </p>
-             <p data-aos="fade-up" class="sub">
-                challenges and triumphs, identity and public perception, self-reflection and growth
-             </p>
-             <p data-aos="fade-up">
-                Key themes discovered in Lover (higher valence, higher energy, higher popularity)
-             </p>
-             <p data-aos="fade-up" class="sub">
-                personal growth and self-discovery, individuality and authenticity, empowerment and acceptance
-             </p>
-             <p data-aos="fade-up">
-                Key themes discovered in folklore (lower valence, lower energy, higher popularity): 
-             </p>
-             <p data-aos="fade-up" class="sub">
-                introspection and reflection, complex relationships, growth and evolution, embracing vulnerability 
-             </p>
-             <p data-aos="fade-up">
-                The themes in these higher popularity albums capture emotions and experiences that echoes Gen Z's values of authenticity, connection, and self-discovery and growth, making these albums hold a significant cultural impact for this generation. 
-             </p>
-        </div>  
-        </div>  
-        <div id="bio">
-             <h2>
-                Global Context:
-Global Music Consumption and the Impact of Global Circumstances on Streaming
-             </h2>
-             <p data-aos="fade-up">
-                The map showcasing Taylor Swift's YouTube plays in various countries provides context for understanding her global popularity. It highlights that her music has significant influence even in non-English-speaking countries, suggesting that her themes and emotions are relatable across cultures. The map showcasing Taylor Swift's YouTube play counts in diverse countries provides a visual representation of her worldwide presence. This observation strengthens the notion that her music possesses an emotional resonance that transcends linguistic boundaries. 
-             </p>
-             <p data-aos="fade-up">
-                The graph showing energy levels of songs over time suggests a potential connection between global events, like the COVID-19 pandemic, and changes in music consumption. Although not definitive, this graph suggests exploration of how significant events may influence artists' creative choices and their music's reception. The graph illustrating energy levels of songs over time hints at Gen Z's ability to adapt their music consumption to changing moods and global circumstances. The decrease in average energy levels in the 2020s compared to the 2010s might indicate that Gen Z is responsive to shifts in societal mood, such as those influenced by the COVID-19 pandemic. This may suggest that they seek music that resonates with their current emotional states and global events.
-             </p>
-             <p data-aos="fade-up">
-                Essentially, our research highlights how various factors contribute to Taylor Swift's popularity among Gen Z and the Eras Tour phenomenon. The genre shifts, emotional resonance, musicological features, global consumption patterns, and societal influences explain Swift’s 17-year-long appeal, cultural significance and reasons behind the continuing records that the Eras Tour is breaking. Ultimately, Taylor Swift represents the power of remaining genuine and loyal to your identity as a pathway to success. Individuals seek someone they can place their trust in, and while perfection is not anticipated, authenticity is highly valued, especially by Gen Z. Studying the intersection between Taylor Swift’s music and Gen Z’s preferences provided deeper insights into her appeal and modern society as a whole. 
-             </p>
-        </div>
-    </section>
+            <div id="bio" style="margin-bottom: 0!important;">
+                <h1 id="popular" style="width:400px">Average Popularity by Year</h1>
+            </div>
+            <div class="section-container" data-aos="fade-up" style="width:100%;margin: 0 auto">
+                <div id="vizContainer1" style="width:60%">
+                    <div class='tableauPlaceholder' id='viz1690968411198' style='position: relative'><noscript><a href='#'><img alt='Average Popularity by Year (Spotify) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;Popularitybyyear&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Popularitybyyear&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;Popularitybyyear&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1690968411198');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+                <div style="width:40%; ">
+                    <p>The line graph shows that Taylor Swift's albums have become increasingly popular over time, with a significant jump in popularity after her 2014 album, 1989. This album was her first full-fledged pop album, and it marked a major departure from her earlier country music sound.
+                    </p>
+                    <p>There are a few reasons why this genre shift may have led to increased popularity. First, pop music is simply more popular than country music in general. In the United States, pop music accounts for the majority of radio airplay and album sales. This means that Taylor Swift's music was more likely to be heard by a wider audience when she switched to pop.</p>
+                    <p>Second, Taylor Swift's pop music is more accessible than her country music. Her pop songs are typically shorter and have more catchy melodies. This makes them easier to listen to and remember, which can lead to more streams.
+                        </p>
+                    <p>Finally, Taylor Swift's pop music is more relatable to a wider audience. Her songs often deal with universal themes like love, heartbreak, and friendship. This makes them more appealing to people of all ages and backgrounds.</p>    
+                    </p>
+                </div>
+            </div>
+            
+            <div id="bio">
+                <p>Of course, there are other factors that have contributed to Taylor Swift's popularity, such as her strong songwriting skills and her savvy marketing campaigns. However, her genre shift from country to pop was a major turning point in her career, and it helped to propel her to superstardom. Overall, the evidence suggests that Taylor Swift's genre shift from country to pop was a major factor in her increased popularity. Her pop music is more accessible, relatable, and popular than her country music, which has helped her to reach a wider audience.
+            </div>
+
+            <div id="bio" style="margin-bottom: 0!important;">
+                <h1 id="energy" style="width:440px">Average Popularity Per Album</h1>
+            </div>
+            <div class="section-container" data-aos="fade-up">
+                <div id="vizContainer1">
+                    <div class='tableauPlaceholder' id='viz1691044370750' style='position: relative'><noscript><a href='#'><img alt='Average Popularity Per Album ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart1_16910443598320&#47;AveragePopularityPerAlbum&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='barchart1_16910443598320&#47;AveragePopularityPerAlbum' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart1_16910443598320&#47;AveragePopularityPerAlbum&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1691044370750');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>    
+                                    <div style="width:30%; ">
+                    <p class="quote">Note: “Popularity” is measured relatively to other albums
+                    </p>
+                    <p >The evolution of Taylor Swift's albums, starting with Taylor Swift, Fearless, and Speak Now, transitioning to Red, and eventually to 1989, showcases her desire to break free from the confines of gender restrictions within the country music genre. Analyzing the bar chart reveals a clear upward trend in popularity from the album Taylor Swift to Red, indicating her successful transition from country to pop music. Notably, albums with a pop music direction exhibit higher popularity compared to those firmly rooted in country music.
+                        The re-recorded version of Fearless (Platinum Edition 2008 and Taylor's Version 2021) serves as a remarkable example of her growth and maturity, exemplified by the alterations in lyrics and musical style. This transformation over a span of 13 years also reflects her evolving perspective, which aligns with feminist themes. To gain comprehensive insights into the development of Taylor's music and its societal and cultural impact, it is imperative to thoroughly examine both primary and secondary sources.
+                        </p>
+                </div>
+            </div>
 
 
+
+            <div id="bio" style="margin-bottom: 0!important;">
+                <h1 id="valence" style="width:680px">Average Energy and Valence Score Per Album</h1>
+            </div>
+            <div class="section-container" data-aos="fade-up">
+                <div id="vizContainer1" style="width:60%">
+                    <div class='tableauPlaceholder' id='viz1691046132528' style='position: relative'><noscript><a href='#'><img alt='Average Energy and Valence Score Per Album ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart1_16910443598320&#47;AverageEnergyandValenceScorePerAlbum&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='barchart1_16910443598320&#47;AverageEnergyandValenceScorePerAlbum' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart1_16910443598320&#47;AverageEnergyandValenceScorePerAlbum&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1691046132528');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>                                    <div style="width:40%; ">
+                    <div style="width:100%; ">
+                        <p>As per Spotify's metrics, the valence score, ranging from 0.0 to 1.0, indicates the degree of musical positiveness in a track. Higher valence scores represent more positive emotions such as happiness, cheerfulness, and euphoria, while lower scores suggest negative emotions like sadness, depression, or anger. On the other hand, the energy score, also ranging from 0.0 to 1.0, measures the intensity and activity perceived in a track.
+                    </p>
+                    <p>Analyzing the graph, it becomes evident that a significant portion of Taylor Swift's songs, as analyzed, have a low valence score, implying that they contain negative commentary on her past loves or relationships. However, in contrast, the average energy score is relatively high, indicating a sense of intensity and activity in her music.
+                        </p>
+                    <p>This intriguing contrast between the predominantly low valence scores and the comparatively high energy scores in Taylor Swift's songs prompts us to delve deeper into both primary and secondary sources. Understanding the inner needs and emotions of Generation Z, the target audience of Taylor Swift's music, can shed light on the reasons behind this musical pattern and its impact on her listeners. Therefore, a comprehensive examination of various sources will aid in unraveling the complexities of Taylor Swift's artistic choices and the way they resonate with her audience.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="bio" style="margin-bottom: 0!important;">
+                <h1 id="duration" style="width:470px">Popularity VS Duration of Track</h1>
+            </div>
+            <div class="section-container" data-aos="fade-up"  style="width:100%;margin: 0 auto">
+                <div id="vizContainer1" style="width:50%; height:100%">
+                    <div class='tableauPlaceholder' id='viz1691018378623' style='position: relative; margin: 0 auto'><noscript><a href='#'><img alt='Popularity vs Duration of Track ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;po&#47;popVSdur&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='popVSdur&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;po&#47;popVSdur&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1691018378623');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+                <div style="width:40%; ">
+                    </p>
+                    <p>Our one assumption to check a Gen Z’s listening habit is that does the duration of a music affects a popularity score since there is a study that demonstrates Gen Z is destroying three-minute pop track. 
+                        </p>
+                    <p>
+
+Since there is no linear relationship is shown, so it is hard to say there is a clear correlation between track duration and its popularity. We are only using Taylor Swift’s tracks and this dataset reflects all Spotify users, so it does not ain to Gen Z only. However, as the article argues, our thesis can be expanded to future research if we can secure a Gen Z’s listening data.
+                    </p>
+                    <a href="https://www.anrfactory.com/have-gen-z-killed-the-3-minute-pop-track/" target="_blank">
+                        https://www.anrfactory.com/have-gen-z-killed-the-3-minute-pop-track/
+
+                    </a>
+                </div>
+            </div>
+
+            <div id="bio" style="margin-bottom: 0!important;">
+                <h1 id="release" style="width:470px">Energy Score by Release Year</h1>
+            </div>
+            <div class="section-container" data-aos="fade-up" style="width:100%;margin: 0 auto">
+                <div id="vizContainer1" style="width:50%; height:100%">
+                    <div class='tableauPlaceholder' id='viz1691046862489' style='position: relative'><noscript><a href='#'><img alt='Bar Chart of Energy Score by Release Year ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart_16910172065280&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='barchart_16910172065280&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart_16910172065280&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1691046862489');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>                
+                </div>
+                <div style="width:50%; ">
+                    </p>
+                    <p>This is a bar graph of the average energy score divided by release year, with each bar representing a different year. The color is weighted by the average popularity. The darker the color, the more popular it is, and the lighter the color, the less popular it is.
+                        </p>
+                    <p >
+
+                        Energy is a measure of intensity and activity on a scale of 0.0 to 1.0. Tracks with high energy tend to be fast, loud, and noisy.                    </p>
+                    <p>
+                        Popularity is a measure of how popular a song is among Spotify users, on a scale of 0 to 100.
+                    </p>
+                    <p>
+                        The reason we included this as a research question is because we thought that the mood of the song somehow reflects the social atmosphere. As the graph shows, the average energy level in the 2020s is lower than in the 2010s overall, and I think this kind of tendency would reflect the worldwide effect, the COVID-19 pandemic for example.
+                    </p>
+                    <p >
+                        The COVID-19 pandemic may have affected the energy levels of songs, including Taylor Swift's. The pandemic changed the way artists create music, and they may have chosen to create more quiet or introspective music in response to the challenging circumstances. In addition, the pandemic was a significant event that could affect the mood or energy of their songs.                    
+                    </p>
+                </div>
+
+            </div>
+            <div id="bio">
+                <p data-aos="fade-up">
+                    To investigate whether Taylor Swift's music was specifically affected by the pandemic or any other significant social change, we could compare the energy levels of her songs released before and after the social change. But we should note that such an analysis could only show correlation, not cause and effect. Even if her songs had lower energy levels during the pandemic than before, this does not guarantee that this tendency was caused the pandemic. Her personal experiences or creative decisions unrelated to the pandemic could also have played a role.                    
+                </p>
+                <p data-aos="fade-up">
+                    Nevertheless, the popularity seems to have increased over the years. From 2017 to 2023, the popularity score becomes larger, so we can expect that her social influence would have an impact on listeners.
+                </p>
+                <p data-aos="fade-up">
+                    Therefore, we can further explore the social impact of Taylor Switft using outside resources. Our team is currently working on how we can relate that into her popularity or social impact on the public. We can also observe any connection between socio-economic background and Taylor Swift's albums or tracks among her audience.
+                </p>    
+            </div>
+            
+        
+
+
+            <div id="bio" style="margin-bottom: 0!important;">
+                <h1 id="map" style="width:1020px">Viewership of Taylor Swift's music in the top 100 countries on YouTube</h1>
+            </div>
+            <div class="section-container" data-aos="fade-up" style="width:75%;margin: 0 auto">
+                <div id="vizContainer2" style="width:100%;">
+                    <div class='tableauPlaceholder' id='viz1691019689991' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3X&#47;3X2H8SCQN&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;3X2H8SCQN' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3X&#47;3X2H8SCQN&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                
+                    <script type='text/javascript'>                    
+                        var divElement = document.getElementById('viz1691019689991');                    
+                        var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                        var scriptElement = document.createElement('script');                    
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                    </script>                
+                </div>
+            </div>
+            <div id="bio">
+                <p data-aos="fade-up">
+                    We created this map using Tableau to visualize the geographic information of Taylor Swift's total plays on YouTube in the top 100 countries. I found this data on https://charts.youtube.com/ since the dataset we are currently using has no geographic information, so I extracted viewership data on YouTube. The reason why I choose this type of map is that it effectively conveys the relative popularity of Taylor Swift’s music in different countries, by differentiating the size of the circle for each country. 
+                </p>
+                <p data-aos="fade-up">
+                    This map does not seem to be directly related to our research question, but I think it somehow helps to understand the relationship between musicological features and the music consumption habits of Gen Z in the way that this map provides a broader context for understanding where and potentially how Gen Z consumes Taylor Swift’s music. In addition, we can take the argument that the lyrics of Taylor Swift's song since the map shows her music has been streamed many times even in the non-English-speaking countries. The significance of this map for our project focuses on our interest in musicological features in listening patterns. It also implies that the global audience for popular music, and the potential variations in music consumption habits and emotional responses across different cultural contexts. Ultimately, this map will help us provide a more nuanced answer to our research question. 
+                </p>
+                <p data-aos="fade-up">
+                    The Spotify Culture Next survey findings corroborate our project's exploration of the relationship between musicological features and Gen Z's music consumption habits. It emphasizes that Gen Z's engagement with music is not just a matter of taste but also tied to their emotional states, underscoring the relevance of our analysis of the emotional features of Taylor Swift's songs. By integrating these insights into our analysis, we can offer a more comprehensive understanding of how Gen Z's emotional experiences and the musicological features of songs interact to shape their listening habits.
+                </p>
+            </div>
+            
+        
+
+            <div id="bio">
+                <h1 id="conclusion" style="width:170px">Conclusion</h1>
+                 <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="quote">In conclusion, based on our data research, we were able to draw conclusions that answer our research questions. </p>
+                 <h2>Genre Shift and Popularity </h2>
+                 <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                    Taylor Swift's transition from country to pop music with her album "1989," led to a significant boost in her popularity. This shift to a more popular and mainstream music genre, characterized by shorter, catchier songs, and universal themes, attracted a wider audience and obtained more streams. The data illustrates a clear trend in Taylor Swift's album popularity over time, with the line graph displaying a substantial increase in popularity following the release of her 2014 album "1989”. This data trend suggests that her move to a more mainstream and popular music genre had a positive impact on her album's appeal, leading to an increase in the frequency of streams and ultimately the album’s success. With indie pop “folklore” having the highest popularity score, followed by pop albums “reputation” and “Lover,” we can infer that pop music tends to receive more attention on mainstream radio, streaming platforms, and music charts, leading to higher streaming numbers and popularity. 
+                 </p>
+            </div>  
+            <div class="parallax-image" style="background-image: url('https://t4.ftcdn.net/jpg/02/07/15/43/360_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg'); margin-bottom:20px; margin-top:20px; height: auto!important;"> 
+            <div id="bio" class="white">
+                 <h2 style="color:white">
+                    Emotional Analysis of Gen Z and Its Impact on Music Consumption
+                 </h2>
+                 <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    Taylor Swift's lyrics often delve into personal experiences, relationships, and emotions. Her storytelling style makes listeners feel connected to the stories she shares, allowing them to experience a deep emotional relationship with her music. The analysis of Spotify metrics offers insights into the emotional and musical characteristics of Taylor Swift's songs. The contrast between low valence scores (negative emotions) and high energy scores suggests that Taylor Swift's music often combines emotionally charged themes with higher musical energy. Gen Z’s emotional landscape indicates Gen Z’s special inclination for music that reflects the emotions and feelings commonly experienced by their generation. With Taylor Swift’s music resonating with Gen Z’s emotional depth and range, we identified key themes in albums with higher popularity scores in various valence and energy levels: 
+                 </p>
+                 <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                    Key themes discovered in reputation (higher valence, lower energy, higher popularity) 
+                 </p>
+                 <p data-aos="fade-up" class="sub" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                    challenges and triumphs, identity and public perception, self-reflection and growth
+                 </p>
+                 <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                    Key themes discovered in Lover (higher valence, higher energy, higher popularity)
+                 </p>
+                 <p data-aos="fade-up" class="sub" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                    personal growth and self-discovery, individuality and authenticity, empowerment and acceptance
+                 </p>
+                 <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                    Key themes discovered in folklore (lower valence, lower energy, higher popularity): 
+                 </p>
+                 <p data-aos="fade-up" class="sub" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                    introspection and reflection, complex relationships, growth and evolution, embracing vulnerability 
+                 </p>
+                 <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                    The themes in these higher popularity albums capture emotions and experiences that echoes Gen Z's values of authenticity, connection, and self-discovery and growth, making these albums hold a significant cultural impact for this generation. 
+                 </p>
+            </div>  
+            </div>  
+
+
+    
+
+    
+
+
+
+    
+
+    <!-- ... Rest of the body content -->
+
+
+    
 
     <ul class="scroll-spy">
-        <li><a href="#timeline2">Music History</a></li>
-        <li><a href="#timeline3">After Pandemic</a></li>
-        <li><a href="#timeline4">Conclusion</a></li>
+        <li><a href="#popular">Average Popularity by Year</a></li>
+        <li><a href="#energy">Average Popularity by Album</a></li>
+        <li><a href="#valence">Energy & Valence per Album</a></li>
+        <li><a href="#duration">Popularity VS Duration</a></li>
+        <li><a href="#release">Energy Score by Year</a></li>
+        <li><a href="#map">Viewership Map</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        
     </ul>
     <div id="contact">
         <h1>contact</h1>
@@ -166,18 +298,15 @@ Global Music Consumption and the Impact of Global Circumstances on Streaming
     <div id="footer" class="animated slideInUp" style="animation-delay:0s; background-color: white; color: black;">
         made on earth by <br> <a href="https://constantinewang.github.io">Constantine Wang</a>
     </div>
-
-    <script src="index.js" type="text/javascript"></script>
-    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-
     <script>
         $(window).scroll(function() {
             var scroll = $(window).scrollTop(),
-                slowScroll = scroll/1.5,
-                slowBg = '50% ' + -(slowScroll) + 'px';
+                slowScroll = scroll/1.7,
+                slowBg = '0% ' + -(slowScroll) + 'px';
     
             $('.parallax-image').css({
                 backgroundPosition: slowBg,
+                height: "auto",
                 //make the image at center
             });
         });
@@ -193,18 +322,10 @@ Global Music Consumption and the Impact of Global Circumstances on Streaming
                 }
             });
         });
-    
-        // $(document).ready(function(){
-        //     var vizUrl = "https://public.tableau.com/views/Shanghaiupdated/Sheet2?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=yes&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:language=en&:loadOrderID=0";
-        //     var vizOptions = {
-        //         hideTabs: true,
-        //         width: "300px",
-        //         height: "300px"
-        //     };
-        //     var vizContainer1 = document.getElementById('vizContainer1');
-        //     var viz = new tableau.Viz(vizContainer1, vizUrl, vizOptions);
-
-        // });
+        var vizContainer = document.getElementById('vizContainer2');
+    vizContainer.onwheel = function(event) {
+        event.preventDefault();
+    };
     </script>
     
 </body>

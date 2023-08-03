@@ -12,7 +12,7 @@ if ((width >= 1000)){
             "padding": "4vh 4vw",
             "border-radius": "15px",
             "backdrop-filter": "blur(10px)",
-            "margin-top": "20px",
+            "margin-top": "10px",
             "width": "90%",
             "margin-left": "5%",
             "margin-right": "5%",

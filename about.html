@@ -66,9 +66,6 @@
 }
 
 .team-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto;
     width: 100% !important;
 }
@@ -76,18 +73,20 @@
 .team-member {
         border: 1px solid #ddd;
         margin: 10px;
-        padding: 10px;
-        width:50%;
-        border-radius: 5px;
+        padding: 30px;
+        border-radius: 15px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 14px;
     }
 
     .team-member img {
         width: 300px;
         object-fit: cover;
-        height: 400px;
         border-radius: 5px;
     }
 
@@ -104,7 +103,17 @@
 
     .team-member:hover {
         box-shadow: 0px 0px 10px rgb(255, 44, 90);
-        transform: scale(1.01);
+        transform: scale(1.03);
+    }
+
+    .red-filter {
+        border-radius: 15px!important;
+        margin-right: 20px;
+        transition: all 0.2s;
+        filter: grayscale(100%) contrast(1) brightness(90%);
+    }
+    .team-member:hover .red-filter {
+            filter: grayscale(0%) contrast(1) brightness(100%);
     }
     </style>
 </head>
@@ -116,7 +125,7 @@
                 <td id="subnavigation">
                     <a href="index.html">Home</a>
                     <a href="narrative.html">Narrative</a>
-                    <a href="data.html">The Data</a>
+                    <a href="data.html">Data</a>
                     <a href="timeline.html">Timeline</a>
                     <a href="references.html">References</a>
                     <a href="about.html">About</a>
@@ -128,26 +137,35 @@
         <h1 style="width:160px">About Us</h1>
         <div id="team" class="team-container">
             <div class="team-member">
-                <img src="Screenshot 2023-08-02 at 12.58.40 PM.jpg" alt="Team Member 1">
-                <h2>Eileen Kang                </h2>
-                <p style="display: none;">Eileen Kang is a third year Psychology major and Digital Humanities minor. As the Project Manager, she oversaw the planning, set task deadlines, and ensured clear communication among teammates to establish expectations and project goals. She was also the Content Developer, weaving the data visualizations, maps, and research into a cohesive narrative that showcases the conclusion of the team’s research on how the Eras Tour reflects modern pop culture and the sentiments of the youth. She conducted thorough research on relevant subjects to ensure accuracy and credibility in the content including collecting data, reviewing literature, reading the news and analyzing trends to present well-informed insights. Additionally, she wrote the conclusion and proofread the entire narrative to enhance clarity and connectivity of different elements of the project. </p>
+                <img class="red-filter"src="Screenshot 2023-08-02 at 12.58.40 PM.jpg" alt="Team Member 1">
+                <div>
+                    <h2>Eileen Kang                </h2>
+                    <p>Eileen Kang is a third year Psychology major and Digital Humanities minor. As the Project Manager, she oversaw the planning, set task deadlines, and ensured clear communication among teammates to establish expectations and project goals. She was also the Content Developer, weaving the data visualizations, maps, and research into a cohesive narrative that showcases the conclusion of the team’s research on how the Eras Tour reflects modern pop culture and the sentiments of the youth. She conducted thorough research on relevant subjects to ensure accuracy and credibility in the content including collecting data, reviewing literature, reading the news and analyzing trends to present well-informed insights. Additionally, she wrote the conclusion and proofread the entire narrative to enhance clarity and connectivity of different elements of the project. </p>
+                </div>   
             </div>
             <div class="team-member">
-                <img src="3911690962618_.pic_hd.jpg" alt="Team Member 2">
-                <h2>Constantine Wang</h2>
-                <p style="display: none;">Constantine Wang is currently pursuing his second year as a Computer Science major. In the role of a software developer, he is responsible for a range of tasks from developing websites and designing logos to collecting videos and images. His focus is on ensuring a robust format for all content on the website. He liaises with each team member to align the design details and makes contributions to the technical aspects of data visualization and timeline editing & embedding. The website is built on the foundation of HTML and Vanilla JS, providing ample freedom to incorporate creative elements. However, this freedom also demands significant effort to maintain organization and seamless user experience. Other than that, he focuses on accessibility of the website. For example, by including a 'scroll spy', he enhances the navigability of the website, especially for users who rely on keyboards for navigation.
-            </div>
+                <img class="red-filter" src="3911690962618_.pic_hd.jpg" alt="Team Member 2">
+                <div><h2>Constantine Wang</h2>
+                <p>Constantine Wang is currently pursuing his second year as a Computer Science major. In the role of a software developer, he is responsible for a range of tasks from developing websites and designing logos to collecting videos and images. His focus is on ensuring a robust format for all content on the website. He liaises with each team member to align the design details and makes contributions to the technical aspects of data visualization and timeline editing & embedding. The website is built on the foundation of HTML and Vanilla JS, providing ample freedom to incorporate creative elements. However, this freedom also demands significant effort to maintain organization and seamless user experience. Other than that, he focuses on accessibility of the website. For example, by including a 'scroll spy', he enhances the navigability of the website, especially for users who rely on keyboards for navigation.</p>
+                </div>
+                </div>
 
             <div class="team-member">
-                <img src="Screenshot 2023-08-02 at 12.48.53 AM.jpg" alt="Team Member 3">
-                <h2>Fengruo Zhang                </h2>
-                <p style="display: none;">Fengruo Zhang is a skilled third-year Statistics major who plays a crucial role as the Project Visualization Specialist. Collaborating closely with Eileen and under the guidance of the Team Manager, Fengruo adeptly handles assigned tasks each week. Her primary responsibilities involve designing data visualizations, specifically bar charts and parallel graphs. Being well-versed in Statistics, Fengruo also takes on the responsibility of providing in-depth explanations and analyses of the timelines and charts she works on. Her expertise ensures that the visual representations of the data are not only aesthetically appealing but also insightful and informative. As a key member of the team, Fengruo's contributions significantly enhance the understanding and interpretation of complex datasets, thereby playing a pivotal role in the success of the project. Her dedication and proficiency in data visualization and statistical analysis make her a valuable asset to the team.</p>
-            </div>
+                <img class="red-filter" src="Screenshot 2023-08-02 at 12.48.53 AM.jpg" alt="Team Member 3">
+                <div>
+                    <h2>Fengruo Zhang                </h2>
+                    <p>Fengruo Zhang is a skilled third-year Statistics major who plays a crucial role as the Project Visualization Specialist. Collaborating closely with Eileen and under the guidance of the Team Manager, Fengruo adeptly handles assigned tasks each week. Her primary responsibilities involve designing data visualizations, specifically bar charts and parallel graphs. Being well-versed in Statistics, Fengruo also takes on the responsibility of providing in-depth explanations and analyses of the timelines and charts she works on. Her expertise ensures that the visual representations of the data are not only aesthetically appealing but also insightful and informative. As a key member of the team, Fengruo's contributions significantly enhance the understanding and interpretation of complex datasets, thereby playing a pivotal role in the success of the project. Her dedication and proficiency in data visualization and statistical analysis make her a valuable asset to the team.</p>
+          
+                </div>
+      </div>
             <div class="team-member">
-                <img src="Screenshot 2023-08-02 at 12.58.56 PM.jpg" alt="Team Member 3">
-                <h2>Changmin Ahn</h2>
-                <p style="display: none;">Changmin Ahn, a passionate senior in Statistics, serves as our invaluable Data Specialist. Leveraging his academic prowess, Changmin has played a pivotal role in shaping the data landscape of our project, including the creation of a comprehensive dataset using API. His unique ability to decipher complex data patterns and translate them into meaningful insights propels our team to new heights. With his profound statistical acumen, Changmin continues to enrich our project with deep analytical understanding and valuable, data-driven decisions. His dedication to data integrity and statistical exploration is unmatched, making him an indispensable asset to our team.
-                </p>
+                <img class="red-filter" src="Screenshot 2023-08-02 at 12.58.56 PM.jpg" alt="Team Member 3">
+                <div>
+                    <h2>Changmin Ahn</h2>
+                    <p>Changmin Ahn, a passionate senior in Statistics, serves as our invaluable Data Specialist. Leveraging his academic prowess, Changmin has played a pivotal role in shaping the data landscape of our project, including the creation of a comprehensive dataset using API. His unique ability to decipher complex data patterns and translate them into meaningful insights propels our team to new heights. With his profound statistical acumen, Changmin continues to enrich our project with deep analytical understanding and valuable, data-driven decisions. His dedication to data integrity and statistical exploration is unmatched, making him an indispensable asset to our team.
+                  
+                </div>
+  </p>
             </div>
             <!-- Add more team members as necessary -->
         </div>
@@ -175,7 +193,7 @@
     <script>
         $(document).ready(function() {
             $(".team-member").on('click', function() {
-                $(this).find('p').slideToggle("slow");
+            
 
             });
         });

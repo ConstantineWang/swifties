@@ -9,26 +9,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
-    <style>
-        #editor {
-            height: 400px;
-            width: 600px;
-        }
-    </style>
-
 </head>
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        
     AOS.init();
     </script>
-        <script src="index.js" type="text/javascript"></script>
-
     <div id="magnify">
         <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
         <div id="img_here"></div>
@@ -40,7 +30,7 @@
                 <td id="navigation">
                     <a href="index.html">Home</a>
                     <a href="narrative.html">Narrative</a>
-                    <a href="data.html">The Data</a>
+                    <a href="data.html">Data</a>
                     <a href="timeline.html">Timeline</a>
                     <a href="references.html">References</a>
                     <a href="about.html">About</a>
@@ -48,315 +38,144 @@
             </tr>
         </table>
     </header>
-
+    
     <section id="narrative">
         <div id="video" class="video-container">
-            <video width="100%" height="400" autoplay muted loop>
-                <source src="9870fd5a-89c1-4d30-b66d-fc055279feeb.mp4" type="video/mp4">
+            <video width="100%" height="300" autoplay muted loop>
+                <source src="Digital presentation of data - dark background _ royalty free videos _ free stock videos 4k.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <div class="video-title">
-                <h2>"The DATA"</h2>
             </div>
         </div>
 
-        <div style="background-color: #fff; color: #000">
-            <div id="bio">
-                <h1 id="critique" style="width:200px">Data Critique</h1>
-                <p>
-                    The Swifties(group name) will include an analysis on each of Taylor’s albums from the perspective of valence, energetic, popularity, streams, and its audio features in the project which means we will include the name for each album and their corresponding regression line/histogram from different perspectives. Our original sources are from Spotify. We will use the data extracted from Spotify API to create better visualizations and superior comprehension of data through R and Tableau.
+        <div id="bio">
+            <h1 id="critique" style="width:200px">Data Critique</h1>
+            <p data-aos="fade-up">
+                The Swifties(group name) will include an analysis on each of Taylor’s albums from the perspective of valence, energetic, popularity, streams, and its audio features in the project which means we will include the name for each album and their corresponding regression line/histogram from different perspectives. Our original sources are from Spotify. We will use the data extracted from Spotify API to create better visualizations and superior comprehension of data through R and Tableau.
+            </p data-aos="fade-up">
+            <p class="sub" data-aos="fade-up">
+                album_name: The name of the album.
+            </p>
+            <p data-aos="fade-up">
+                album_id: The identifier for the album name Spotify uses.
+
+            </p>
+            <p class="sub" data-aos="fade-up">
+                track_name: The name of the trach in the album.
+
+            </p>
+            <p class="sub" data-aos="fade-up">
+                track_id: The identifier for the track name Spotify uses.
+
+            </p>
+            <p class="sub" data-aos="fade-up">
+                album_release_date: The release date of the album in yyyy-mm–dd.
+            </p>
+            <p class="sub" data-aos="fade-up">
+                album_release_year: The release year of the album.
+            </p>
+            <p class="sub" data-aos="fade-up">
+                genre: The genre of the song.
+            </p>
+            <p class="sub" data-aos="fade-up">
+                All other features’ descriptions available on: <a>https://developer.spotify.com/documentation/web-api/reference/get-audio-features </a>             </p>
+            </div>
+        <div class="parallax-image" style="background-image: url('https://t4.ftcdn.net/jpg/02/07/15/43/360_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg'); margin-bottom:20px; margin-top:20px; height: auto!important"> 
+            <div id="bio" class="white" style="color:white!important">
+                <p data-aos="fade-up">These datasets can only reveal which Taylor Swift songs or album styles are more favored by the audience. These datasets will provide Taylor Swift and her company with superior inspiration on what types or melodies should Taylor Swift produce. However, the dataset we used did not reveal whether Taylor Swift was a genius on marketing/entrepreneurship in her music industry and how her music has caused a cultural impact. </p>
+                <p data-aos="fade-up" class="sub">The ideological effects of a dataset’s ontology (the categorization and labeling of sources of data) explains how a dataset is grouped can impact the representation of different phenomena. It shows how the choices of presenting and grouping datasets can shape the interpretation of a subject. </p>
+                <p data-aos="fade-up" class="sub">The data’s ontology can be influenced by several factors including selection bias and the influence of Spotify’s algorithm. </p>
+                <p data-aos="fade-up" class="sub">The dataset may demonstrate selection bias, meaning that the streaming data is a reflection of a certain demographic, geography or member/user preferences. This usually results in a skewed conclusion of a dataset analysis. Furthermore, the algorithm of Spotify may influence the data (users’ consumption patterns) as streaming services may loop users back into certain songs, artists, and genres, ultimately increasing Taylor Swift’s popularity on the platform. Hence, the Spotify algorithm may influence a user’s consumption patterns and impact the amount of streams a song/artist receives. </p>
+                <p data-aos="fade-up">The data is primarily focused on measuring audience preference for different songs and styles, aimed at Gen Z, rather than looking at Taylor Swift’s broader impact on the music industry. This suggests an ideological focus on consumer tastes and market forces, as opposed to the artist’s role as a cultural influencer, entrepreneur, or innovator. The way our sources are divided into data, and the resulting data that’s focused on, can carry inherent that reflect specific biological perspectives. It’s crucial to approach such data with an understanding of these potential biases and to consider a more holistic perspective when evaluating an artist’s impact and success.</p>
+                <p data-aos="fade-up">While our datasets from Spotify and YouTube offer valuable insights into Taylor Swift's music in terms of audience preferences, popularity, and certain musical attributes, they do not fully reflect her extensive influence and dynamism as a pop culture force. The organization and classification of the data (the dataset's ontology) inherently focuses on consumption-based metrics, leaving out her significant impacts in areas such as cultural influence, marketing, and entrepreneurship. This reflects an ideological bias towards consumer-driven perspectives and underscores the importance of recognizing such limitations in data analysis. To achieve a more holistic understanding of Taylor Swift's artistry and influence, it is imperative to incorporate diverse data sources that consider her multifaceted role in the music industry and popular culture, beyond simply the metrics of song streams or album popularity.
                 </p>
-                <p class="sub">
-                    album_name: The name of the album.
-                </p>
-                <p>
-                    album_id: The identifier for the album name Spotify uses.
-
-                </p>
-                <p class="sub">
-                    track_name: The name of the trach in the album.
-
-                </p>
-                <p class="sub">
-                    track_id: The identifier for the track name Spotify uses.
-
-                </p>
-                <p class="sub">
-                    album_release_date: The release date of the album in yyyy-mm–dd.
-                </p>
-                <p class="sub">
-                    album_release_year: The release year of the album.
-                </p>
-                <p class="sub">
-                    genre: The genre of the song.
-                </p>
-                <p class="sub">
-                    All other features’ descriptions available on: <a>https://developer.spotify.com/documentation/web-api/reference/get-audio-features </a>             </p>
-                </div>
-            <div class="parallax-image" style="background-image: url('https://t4.ftcdn.net/jpg/02/07/15/43/360_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg'); margin-bottom:20px; margin-top:20px; height: auto!important"> 
-                <div id="bio" class="white" style="color:white!important">
-                    <p data-aos="fade-up">These datasets can only reveal which Taylor Swift songs or album styles are more favored by the audience. These datasets will provide Taylor Swift and her company with superior inspiration on what types or melodies should Taylor Swift produce. However, the dataset we used did not reveal whether Taylor Swift was a genius on marketing/entrepreneurship in her music industry and how her music has caused a cultural impact. </p>
-                    <p data-aos="fade-up" class="sub">The ideological effects of a dataset’s ontology (the categorization and labeling of sources of data) explains how a dataset is grouped can impact the representation of different phenomena. It shows how the choices of presenting and grouping datasets can shape the interpretation of a subject. </p>
-                    <p data-aos="fade-up" class="sub">The data’s ontology can be influenced by several factors including selection bias and the influence of Spotify’s algorithm. </p>
-                    <p data-aos="fade-up" class="sub">The dataset may demonstrate selection bias, meaning that the streaming data is a reflection of a certain demographic, geography or member/user preferences. This usually results in a skewed conclusion of a dataset analysis. Furthermore, the algorithm of Spotify may influence the data (users’ consumption patterns) as streaming services may loop users back into certain songs, artists, and genres, ultimately increasing Taylor Swift’s popularity on the platform. Hence, the Spotify algorithm may influence a user’s consumption patterns and impact the amount of streams a song/artist receives. </p>
-                    <p data-aos="fade-up">The data is primarily focused on measuring audience preference for different songs and styles, aimed at Gen Z, rather than looking at Taylor Swift’s broader impact on the music industry. This suggests an ideological focus on consumer tastes and market forces, as opposed to the artist’s role as a cultural influencer, entrepreneur, or innovator. The way our sources are divided into data, and the resulting data that’s focused on, can carry inherent that reflect specific biological perspectives. It’s crucial to approach such data with an understanding of these potential biases and to consider a more holistic perspective when evaluating an artist’s impact and success.</p>
-                    <p data-aos="fade-up">While our datasets from Spotify and YouTube offer valuable insights into Taylor Swift's music in terms of audience preferences, popularity, and certain musical attributes, they do not fully reflect her extensive influence and dynamism as a pop culture force. The organization and classification of the data (the dataset's ontology) inherently focuses on consumption-based metrics, leaving out her significant impacts in areas such as cultural influence, marketing, and entrepreneurship. This reflects an ideological bias towards consumer-driven perspectives and underscores the importance of recognizing such limitations in data analysis. To achieve a more holistic understanding of Taylor Swift's artistry and influence, it is imperative to incorporate diverse data sources that consider her multifaceted role in the music industry and popular culture, beyond simply the metrics of song streams or album popularity.
-                    </p>
-                </div>
             </div>
+        </div>
 
-
-
-                <!-- The Tableau visualization will be placed here -->
-            </div>
-            <div id="bio" style="margin-bottom: 0!important;">
-                <h1 id="popular" style="width:400px">Average Popularity by Year</h1>
-            </div>
-            <div class="section-container" data-aos="fade-up" style="width:100%;margin: 0 auto">
-                <div id="vizContainer1" style="width:60%">
-                    <div class='tableauPlaceholder' id='viz1690968411198' style='position: relative'><noscript><a href='#'><img alt='Average Popularity by Year (Spotify) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;Popularitybyyear&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Popularitybyyear&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;Popularitybyyear&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1690968411198');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                </div>
-                <div style="width:40%; ">
-                    <p>The line graph shows that Taylor Swift's albums have become increasingly popular over time, with a significant jump in popularity after her 2014 album, 1989. This album was her first full-fledged pop album, and it marked a major departure from her earlier country music sound.
-                    </p>
-                    <p>There are a few reasons why this genre shift may have led to increased popularity. First, pop music is simply more popular than country music in general. In the United States, pop music accounts for the majority of radio airplay and album sales. This means that Taylor Swift's music was more likely to be heard by a wider audience when she switched to pop.</p>
-                    <p>Second, Taylor Swift's pop music is more accessible than her country music. Her pop songs are typically shorter and have more catchy melodies. This makes them easier to listen to and remember, which can lead to more streams.
-                        </p>
-                    <p>Finally, Taylor Swift's pop music is more relatable to a wider audience. Her songs often deal with universal themes like love, heartbreak, and friendship. This makes them more appealing to people of all ages and backgrounds.</p>    
-                    </p>
-                </div>
-            </div>
-            
-            <div id="bio">
-                <p>Of course, there are other factors that have contributed to Taylor Swift's popularity, such as her strong songwriting skills and her savvy marketing campaigns. However, her genre shift from country to pop was a major turning point in her career, and it helped to propel her to superstardom. Overall, the evidence suggests that Taylor Swift's genre shift from country to pop was a major factor in her increased popularity. Her pop music is more accessible, relatable, and popular than her country music, which has helped her to reach a wider audience.
-            </div>
-
-            <div id="bio" style="margin-bottom: 0!important;">
-                <h1 id="energy" style="width:440px">Average Popularity Per Album</h1>
-            </div>
-            <div class="section-container" data-aos="fade-up">
-                <div id="vizContainer1">
-                    <div class='tableauPlaceholder' id='viz1691044370750' style='position: relative'><noscript><a href='#'><img alt='Average Popularity Per Album ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart1_16910443598320&#47;AveragePopularityPerAlbum&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='barchart1_16910443598320&#47;AveragePopularityPerAlbum' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart1_16910443598320&#47;AveragePopularityPerAlbum&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1691044370750');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>    
-                                    <div style="width:30%; ">
-                    <p class="quote">Note: “Popularity” is measured relatively to other albums
-                    </p>
-                    <p >The evolution of Taylor Swift's albums, starting with Taylor Swift, Fearless, and Speak Now, transitioning to Red, and eventually to 1989, showcases her desire to break free from the confines of gender restrictions within the country music genre. Analyzing the bar chart reveals a clear upward trend in popularity from the album Taylor Swift to Red, indicating her successful transition from country to pop music. Notably, albums with a pop music direction exhibit higher popularity compared to those firmly rooted in country music.
-                        The re-recorded version of Fearless (Platinum Edition 2008 and Taylor's Version 2021) serves as a remarkable example of her growth and maturity, exemplified by the alterations in lyrics and musical style. This transformation over a span of 13 years also reflects her evolving perspective, which aligns with feminist themes. To gain comprehensive insights into the development of Taylor's music and its societal and cultural impact, it is imperative to thoroughly examine both primary and secondary sources.
-                        </p>
-                </div>
-            </div>
-
-
-
-            <div id="bio" style="margin-bottom: 0!important;">
-                <h1 id="valence" style="width:680px">Average Energy and Valence Score Per Album</h1>
-            </div>
-            <div class="section-container" data-aos="fade-up">
-                <div id="vizContainer1" style="width:60%">
-                    <div class='tableauPlaceholder' id='viz1691046132528' style='position: relative'><noscript><a href='#'><img alt='Average Energy and Valence Score Per Album ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart1_16910443598320&#47;AverageEnergyandValenceScorePerAlbum&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='barchart1_16910443598320&#47;AverageEnergyandValenceScorePerAlbum' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart1_16910443598320&#47;AverageEnergyandValenceScorePerAlbum&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1691046132528');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>                                    <div style="width:40%; ">
-                    <div style="width:100%; ">
-                        <p>As per Spotify's metrics, the valence score, ranging from 0.0 to 1.0, indicates the degree of musical positiveness in a track. Higher valence scores represent more positive emotions such as happiness, cheerfulness, and euphoria, while lower scores suggest negative emotions like sadness, depression, or anger. On the other hand, the energy score, also ranging from 0.0 to 1.0, measures the intensity and activity perceived in a track.
-                    </p>
-                    <p>Analyzing the graph, it becomes evident that a significant portion of Taylor Swift's songs, as analyzed, have a low valence score, implying that they contain negative commentary on her past loves or relationships. However, in contrast, the average energy score is relatively high, indicating a sense of intensity and activity in her music.
-                        </p>
-                    <p>This intriguing contrast between the predominantly low valence scores and the comparatively high energy scores in Taylor Swift's songs prompts us to delve deeper into both primary and secondary sources. Understanding the inner needs and emotions of Generation Z, the target audience of Taylor Swift's music, can shed light on the reasons behind this musical pattern and its impact on her listeners. Therefore, a comprehensive examination of various sources will aid in unraveling the complexities of Taylor Swift's artistic choices and the way they resonate with her audience.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div id="bio" style="margin-bottom: 0!important;">
-                <h1 id="duration" style="width:470px">Popularity VS Duration of Track</h1>
-            </div>
-            <div class="section-container" data-aos="fade-up"  style="width:100%;margin: 0 auto">
-                <div id="vizContainer1" style="width:50%; height:100%">
-                    <div class='tableauPlaceholder' id='viz1691018378623' style='position: relative; margin: 0 auto'><noscript><a href='#'><img alt='Popularity vs Duration of Track ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;po&#47;popVSdur&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='popVSdur&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;po&#47;popVSdur&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1691018378623');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                </div>
-                <div style="width:40%; ">
-                    </p>
-                    <p data-aos="fade-up">Our one assumption to check a Gen Z’s listening habit is that does the duration of a music affects a popularity score since there is a study that demonstrates Gen Z is destroying three-minute pop track. 
-                        </p>
-                    <p data-aos="fade-up">
-
-Since there is no linear relationship is shown, so it is hard to say there is a clear correlation between track duration and its popularity. We are only using Taylor Swift’s tracks and this dataset reflects all Spotify users, so it does not ain to Gen Z only. However, as the article argues, our thesis can be expanded to future research if we can secure a Gen Z’s listening data.
-                    </p>
-                    <a href="https://www.anrfactory.com/have-gen-z-killed-the-3-minute-pop-track/" target="_blank">
-                        https://www.anrfactory.com/have-gen-z-killed-the-3-minute-pop-track/
-
-                    </a>
-                </div>
-            </div>
-
-            <div id="bio" style="margin-bottom: 0!important;">
-                <h1 id="release" style="width:470px">Energy Score by Release Year</h1>
-            </div>
-            <div class="section-container" data-aos="fade-up" style="width:100%;margin: 0 auto">
-                <div id="vizContainer1" style="width:50%; height:100%">
-                    <div class='tableauPlaceholder' id='viz1691046862489' style='position: relative'><noscript><a href='#'><img alt='Bar Chart of Energy Score by Release Year ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart_16910172065280&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='barchart_16910172065280&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;barchart_16910172065280&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1691046862489');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>                
-                </div>
-                <div style="width:50%; ">
-                    </p>
-                    <p>This is a bar graph of the average energy score divided by release year, with each bar representing a different year. The color is weighted by the average popularity. The darker the color, the more popular it is, and the lighter the color, the less popular it is.
-                        </p>
-                    <p >
-
-                        Energy is a measure of intensity and activity on a scale of 0.0 to 1.0. Tracks with high energy tend to be fast, loud, and noisy.                    </p>
-                    <p>
-                        Popularity is a measure of how popular a song is among Spotify users, on a scale of 0 to 100.
-                    </p>
-                    <p>
-                        The reason we included this as a research question is because we thought that the mood of the song somehow reflects the social atmosphere. As the graph shows, the average energy level in the 2020s is lower than in the 2010s overall, and I think this kind of tendency would reflect the worldwide effect, the COVID-19 pandemic for example.
-                    </p>
-                    <p >
-                        The COVID-19 pandemic may have affected the energy levels of songs, including Taylor Swift's. The pandemic changed the way artists create music, and they may have chosen to create more quiet or introspective music in response to the challenging circumstances. In addition, the pandemic was a significant event that could affect the mood or energy of their songs.                    
-                    </p>
-                </div>
-
-            </div>
-            <div id="bio">
-                <p data-aos="fade-up">
-                    To investigate whether Taylor Swift's music was specifically affected by the pandemic or any other significant social change, we could compare the energy levels of her songs released before and after the social change. But we should note that such an analysis could only show correlation, not cause and effect. Even if her songs had lower energy levels during the pandemic than before, this does not guarantee that this tendency was caused the pandemic. Her personal experiences or creative decisions unrelated to the pandemic could also have played a role.                    
-                </p>
-                <p data-aos="fade-up">
-                    Nevertheless, the popularity seems to have increased over the years. From 2017 to 2023, the popularity score becomes larger, so we can expect that her social influence would have an impact on listeners.
-                </p>
-                <p data-aos="fade-up">
-                    Therefore, we can further explore the social impact of Taylor Switft using outside resources. Our team is currently working on how we can relate that into her popularity or social impact on the public. We can also observe any connection between socio-economic background and Taylor Swift's albums or tracks among her audience.
-                </p>    
-            </div>
-            
         
-
-
-            <div id="bio" style="margin-bottom: 0!important;">
-                <h1 id="map" style="width:1020px">Viewership of Taylor Swift's music in the top 100 countries on YouTube</h1>
-            </div>
-            <div class="section-container" data-aos="fade-up" style="width:75%;margin: 0 auto">
-                <div id="vizContainer2" style="width:100%;">
-                    <div class='tableauPlaceholder' id='viz1691019689991' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3X&#47;3X2H8SCQN&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;3X2H8SCQN' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3X&#47;3X2H8SCQN&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                
-                    <script type='text/javascript'>                    
-                        var divElement = document.getElementById('viz1691019689991');                    
-                        var vizElement = divElement.getElementsByTagName('object')[0];                    
-                        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-                        var scriptElement = document.createElement('script');                    
-                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                    </script>                
-                </div>
-            </div>
-            <div id="bio">
-                <p data-aos="fade-up">
-                    We created this map using Tableau to visualize the geographic information of Taylor Swift's total plays on YouTube in the top 100 countries. I found this data on https://charts.youtube.com/ since the dataset we are currently using has no geographic information, so I extracted viewership data on YouTube. The reason why I choose this type of map is that it effectively conveys the relative popularity of Taylor Swift’s music in different countries, by differentiating the size of the circle for each country. 
-                </p>
-                <p data-aos="fade-up">
-                    This map does not seem to be directly related to our research question, but I think it somehow helps to understand the relationship between musicological features and the music consumption habits of Gen Z in the way that this map provides a broader context for understanding where and potentially how Gen Z consumes Taylor Swift’s music. In addition, we can take the argument that the lyrics of Taylor Swift's song since the map shows her music has been streamed many times even in the non-English-speaking countries. The significance of this map for our project focuses on our interest in musicological features in listening patterns. It also implies that the global audience for popular music, and the potential variations in music consumption habits and emotional responses across different cultural contexts. Ultimately, this map will help us provide a more nuanced answer to our research question. 
-                </p>
-                <p data-aos="fade-up">
-                    The Spotify Culture Next survey findings corroborate our project's exploration of the relationship between musicological features and Gen Z's music consumption habits. It emphasizes that Gen Z's engagement with music is not just a matter of taste but also tied to their emotional states, underscoring the relevance of our analysis of the emotional features of Taylor Swift's songs. By integrating these insights into our analysis, we can offer a more comprehensive understanding of how Gen Z's emotional experiences and the musicological features of songs interact to shape their listening habits.
-                </p>
-            </div>
-            
-        
-
-
     </section>
 
+
     <div id="bio">
-
-    <h1 style="width:530px" id="code">Dataset Acquisition via R Code</h2>
-        <p class="quote">To get a dataset of Taylor Swift's albums, we took advantage of the Spotify API. Using the spotifyr library in R, we were able to call the Spotify API in R.</p>
-
-        <div id="editor" style="height: 500px; width: 100%; font-size: 15px; position: relative!important;">
-id <- '######'
-secret <- '######'
-
-
-Sys.setenv(SPOTIFY_CLIENT_ID = id)
-Sys.setenv(SPOTIFY_CLIENT_SECRET = secret)
-
-access_token <- get_spotify_access_token()
-
-taylor_id <- "06HL4z0CvFAxyc27GXpf02"
-
-# Discography
-taylorswift <- get_artist_audio_features(
-    artist = taylor_id,
-    include_groups = c("album", "single"))
-
-taylorswift <- taylorswift %>%
-    select(album_id, album_release_date, album_release_year, 
-            danceability, energy, key, loudness, mode, speechiness, acousticness,
-            instrumentalness, liveness, valence, tempo, track_id,
-            time_signature, duration_ms, explicit, track_name,
-            album_name, key_name, mode_name, key_mode)
-
-n <- nrow(taylorswift)
-popularity <- integer(n)
-
-for(i in 1:n) {
-    track_id <- taylorswift$track_id[i]
-    song_popularity <- get_track(track_id)
-    popularity[i] <- song_popularity$popularity
-}
-
-taylorswift <- cbind(taylorswift, popularity)
-# Rearrange the columns
-taylorswift <- select(taylorswift, album_name, album_id, track_name, track_id, album_release_date, 
-                        album_release_year, popularity, danceability, energy, key, loudness, mode, speechiness, 
-                        acousticness, instrumentalness, liveness, valence, tempo, time_signature, 
-                        duration_ms, explicit, key_name, mode_name, key_mode)
-
-country_album <- c("Fearless", "Red", "Speak Now")
-
-country_indices <- c(
-    which(grepl("Fearless", taylorswift$album_name, ignore.case = TRUE, fixed = FALSE)),
-    which(grepl("Red", taylorswift$album_name, ignore.case = TRUE, fixed = FALSE)),
-    which(grepl("Speak Now", taylorswift$album_name, ignore.case = TRUE, fixed = FALSE))
-)
-
-country_indices <- country_indices[-114]
-country_albums <- unique(taylorswift$album_name[country_indices])
-print(country_albums)
-
-indices <- which(taylorswift$album_name %in% country_albums)
-
-genre <- character(n)
-genre[1:n] <- "Pop"
-genre[indices] <- "Country"
-
-taylorswift <- cbind(taylorswift, genre)
-
-taylorswift <- taylorswift %>%
-    arrange(album_release_date)
-
         
-          </div>
-    </div>
 
-    <!-- ... Rest of the body content -->
-
-    <script>
-        var editor = ace.edit("editor");
-        editor.setTheme("ace/theme/monokai");
-        editor.session.setMode("ace/mode/r");
-      </script>
+        <h1 style="width:530px" id="code">Dataset Acquisition via R Code</h2>
+            <p class="quote">To get a dataset of Taylor Swift's albums, we took advantage of the Spotify API. Using the spotifyr library in R, we were able to call the Spotify API in R.</p>
     
+            <div id="editor" style="height: 500px; width: 100%; font-size: 15px; position: relative!important;">
+    id <- '######'
+    secret <- '######'
+    
+    
+    Sys.setenv(SPOTIFY_CLIENT_ID = id)
+    Sys.setenv(SPOTIFY_CLIENT_SECRET = secret)
+    
+    access_token <- get_spotify_access_token()
+    
+    taylor_id <- "06HL4z0CvFAxyc27GXpf02"
+    
+    # Discography
+    taylorswift <- get_artist_audio_features(
+        artist = taylor_id,
+        include_groups = c("album", "single"))
+    
+    taylorswift <- taylorswift %>%
+        select(album_id, album_release_date, album_release_year, 
+                danceability, energy, key, loudness, mode, speechiness, acousticness,
+                instrumentalness, liveness, valence, tempo, track_id,
+                time_signature, duration_ms, explicit, track_name,
+                album_name, key_name, mode_name, key_mode)
+    
+    n <- nrow(taylorswift)
+    popularity <- integer(n)
+    
+    for(i in 1:n) {
+        track_id <- taylorswift$track_id[i]
+        song_popularity <- get_track(track_id)
+        popularity[i] <- song_popularity$popularity
+    }
+    
+    taylorswift <- cbind(taylorswift, popularity)
+    # Rearrange the columns
+    taylorswift <- select(taylorswift, album_name, album_id, track_name, track_id, album_release_date, 
+                            album_release_year, popularity, danceability, energy, key, loudness, mode, speechiness, 
+                            acousticness, instrumentalness, liveness, valence, tempo, time_signature, 
+                            duration_ms, explicit, key_name, mode_name, key_mode)
+    
+    country_album <- c("Fearless", "Red", "Speak Now")
+    
+    country_indices <- c(
+        which(grepl("Fearless", taylorswift$album_name, ignore.case = TRUE, fixed = FALSE)),
+        which(grepl("Red", taylorswift$album_name, ignore.case = TRUE, fixed = FALSE)),
+        which(grepl("Speak Now", taylorswift$album_name, ignore.case = TRUE, fixed = FALSE))
+    )
+    
+    country_indices <- country_indices[-114]
+    country_albums <- unique(taylorswift$album_name[country_indices])
+    print(country_albums)
+    
+    indices <- which(taylorswift$album_name %in% country_albums)
+    
+    genre <- character(n)
+    genre[1:n] <- "Pop"
+    genre[indices] <- "Country"
+    
+    taylorswift <- cbind(taylorswift, genre)
+    
+    taylorswift <- taylorswift %>%
+        arrange(album_release_date)
+    
+            
+              </div>
+        </div>
+    
+
+
 
     <ul class="scroll-spy">
         <li><a href="#critique">Data Critique</a></li>
-        <li><a href="#popular">Average Popularity by Year</a></li>
-        <li><a href="#energy">Average Popularity by Album</a></li>
-        <li><a href="#valence">Energy & Valence per Album</a></li>
-        <li><a href="#duration">Popularity VS Duration</a></li>
-        <li><a href="#release">Energy Score by Year</a></li>
-        <li><a href="#map">Viewership Map</a></li>
-        <li><a href="#code">Code</a></li>
-        
+        <li><a href="#code">code</a></li>
     </ul>
     <div id="contact">
         <h1>contact</h1>
@@ -376,16 +195,23 @@ taylorswift <- taylorswift %>%
     <div id="footer" class="animated slideInUp" style="animation-delay:0s; background-color: white; color: black;">
         made on earth by <br> <a href="https://constantinewang.github.io">Constantine Wang</a>
     </div>
-    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/r");
+      </script>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
     <script>
         $(window).scroll(function() {
             var scroll = $(window).scrollTop(),
-                slowScroll = scroll/1.7,
-                slowBg = '0% ' + -(slowScroll) + 'px';
+                slowScroll = scroll/1.5,
+                slowBg = '50% ' + -(slowScroll) + 'px';
     
             $('.parallax-image').css({
                 backgroundPosition: slowBg,
-                height: "auto",
                 //make the image at center
             });
         });
@@ -401,10 +227,18 @@ taylorswift <- taylorswift %>%
                 }
             });
         });
-        var vizContainer = document.getElementById('vizContainer2');
-    vizContainer.onwheel = function(event) {
-        event.preventDefault();
-    };
+    
+        // $(document).ready(function(){
+        //     var vizUrl = "https://public.tableau.com/views/Shanghaiupdated/Sheet2?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=yes&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:language=en&:loadOrderID=0";
+        //     var vizOptions = {
+        //         hideTabs: true,
+        //         width: "300px",
+        //         height: "300px"
+        //     };
+        //     var vizContainer1 = document.getElementById('vizContainer1');
+        //     var viz = new tableau.Viz(vizContainer1, vizUrl, vizOptions);
+
+        // });
     </script>
     
 </body>
